@@ -1,0 +1,468 @@
+// Generated from pkaction.txt
+
+polkit.addRule(function(action, subject) {
+    if ((
+		//action.id == "com.hp.hplip.installplugin" ||
+//implicit active:   auth_admin
+		//action.id == "com.ubuntu.pkexec.gufw" ||
+//implicit active:   auth_admin
+//annotation:        org.freedesktop.policykit.exec.path -> /usr/bin/gufw-pkexec
+//annotation:        org.freedesktop.policykit.exec.allow_gui -> true
+		//action.id == "com.ubuntu.pkexec.lightdm-gtk-greeter-settings" ||
+//implicit active:   auth_admin
+//annotation:        org.freedesktop.policykit.exec.path -> /usr/bin/lightdm-gtk-greeter-settings
+//annotation:        org.freedesktop.policykit.exec.allow_gui -> true
+		//action.id == "com.ubuntu.pkexec.synaptic" ||
+//implicit active:   auth_admin
+//annotation:        org.freedesktop.policykit.exec.path -> /usr/sbin/synaptic
+//annotation:        org.freedesktop.policykit.exec.allow_gui -> true
+		//action.id == "in.teejeetech.pkexec.timeshift" ||
+//implicit active:   auth_admin
+//annotation:        org.freedesktop.policykit.exec.path -> /usr/bin/timeshift
+//annotation:        org.freedesktop.policykit.exec.allow_gui -> true
+		//action.id == "in.teejeetech.pkexec.timeshift-gtk" ||
+//implicit active:   auth_admin
+//annotation:        org.freedesktop.policykit.exec.path -> /usr/bin/timeshift-gtk
+//annotation:        org.freedesktop.policykit.exec.allow_gui -> true
+		//action.id == "net.reactivated.fprint.device.setusername" ||
+//implicit active:   auth_admin_keep
+		//action.id == "org.bleachbit" ||
+//implicit active:   auth_admin
+//annotation:        org.freedesktop.policykit.exec.path -> /usr/bin/bleachbit
+//annotation:        org.freedesktop.policykit.exec.allow_gui -> true
+		//action.id == "org.blueman.dhcp.client" ||
+//implicit active:   auth_admin_keep
+		//action.id == "org.blueman.network.setup" ||
+//implicit active:   auth_admin_keep
+		//action.id == "org.blueman.pppd.pppconnect" ||
+//implicit active:   auth_admin_keep
+		//action.id == "org.blueman.rfkill.setstate" ||
+//implicit active:   auth_admin_keep
+		//action.id == "org.dpkg.pkexec.update-alternatives" ||
+//implicit active:   auth_admin_keep
+//annotation:        org.freedesktop.policykit.exec.path -> /usr/bin/update-alternatives
+		//action.id == "org.freedesktop.Flatpak.app-install" ||
+//implicit active:   auth_admin_keep
+//annotation:        org.freedesktop.policykit.imply -> org.freedesktop.Flatpak.app-update org.freedesktop.Flatpak.runtime-install org.freedesktop.Flatpak.runtime-update
+		//action.id == "org.freedesktop.Flatpak.app-uninstall" ||
+//implicit active:   auth_admin_keep
+//annotation:        org.freedesktop.policykit.imply -> org.freedesktop.Flatpak.runtime-uninstall
+		//action.id == "org.freedesktop.Flatpak.configure" ||
+//implicit active:   auth_admin_keep
+		//action.id == "org.freedesktop.Flatpak.configure-remote" ||
+//implicit active:   auth_admin_keep
+		//action.id == "org.freedesktop.Flatpak.install-bundle" ||
+//implicit active:   auth_admin_keep
+//annotation:        org.freedesktop.policykit.imply -> org.freedesktop.Flatpak.runtime-install org.freedesktop.Flatpak.runtime-update
+		//action.id == "org.freedesktop.Flatpak.override-parental-controls" ||
+//implicit active:   auth_admin
+		//action.id == "org.freedesktop.Flatpak.runtime-install" ||
+//implicit active:   auth_admin_keep
+//annotation:        org.freedesktop.policykit.imply -> org.freedesktop.Flatpak.runtime-update
+		//action.id == "org.freedesktop.Flatpak.runtime-uninstall" ||
+//implicit active:   auth_admin_keep
+		//action.id == "org.freedesktop.ModemManager1.Control" ||
+//implicit active:   auth_admin
+		//action.id == "org.freedesktop.ModemManager1.Firmware" ||
+//implicit active:   auth_admin
+		//action.id == "org.freedesktop.NetworkManager.checkpoint-rollback" ||
+//implicit active:   auth_admin_keep
+		//action.id == "org.freedesktop.NetworkManager.reload" ||
+//implicit active:   auth_admin_keep
+		//action.id == "org.freedesktop.NetworkManager.settings.modify.global-dns" ||
+//implicit active:   auth_admin_keep
+		//action.id == "org.freedesktop.NetworkManager.settings.modify.hostname" ||
+//implicit active:   auth_admin_keep
+		//action.id == "org.freedesktop.NetworkManager.settings.modify.system" ||
+//implicit active:   auth_admin_keep
+		//action.id == "org.freedesktop.accounts.change-own-password" ||
+//implicit active:   auth_admin
+		//action.id == "org.freedesktop.accounts.set-login-option" ||
+//implicit active:   auth_admin_keep
+//annotation:        org.gnome.gconf.defaults.set-mandatory.prefix -> /apps/gdm/simple-greeter
+		//action.id == "org.freedesktop.accounts.user-administration" ||
+//implicit active:   auth_admin_keep
+		//action.id == "org.freedesktop.color-manager.install-system-wide" ||
+//implicit active:   auth_admin_keep
+//annotation:        org.freedesktop.policykit.owner -> unix-user:colord
+		//action.id == "org.freedesktop.hostname1.get-description" ||
+//implicit active:   auth_admin_keep
+		//action.id == "org.freedesktop.hostname1.get-hardware-serial" ||
+//implicit active:   auth_admin_keep
+		//action.id == "org.freedesktop.hostname1.get-product-uuid" ||
+//implicit active:   auth_admin_keep
+		//action.id == "org.freedesktop.hostname1.set-hostname" ||
+//implicit active:   auth_admin_keep
+		//action.id == "org.freedesktop.hostname1.set-machine-info" ||
+//implicit active:   auth_admin_keep
+		//action.id == "org.freedesktop.hostname1.set-static-hostname" ||
+//implicit active:   auth_admin_keep
+//annotation:        org.freedesktop.policykit.imply -> org.freedesktop.hostname1.set-hostname org.freedesktop.hostname1.set-machine-info
+		//action.id == "org.freedesktop.locale1.set-keyboard" ||
+//implicit active:   auth_admin_keep
+		//action.id == "org.freedesktop.locale1.set-locale" ||
+//implicit active:   auth_admin_keep
+//annotation:        org.freedesktop.policykit.imply -> org.freedesktop.locale1.set-keyboard
+		//action.id == "org.freedesktop.login1.attach-device" ||
+//implicit active:   auth_admin_keep
+//annotation:        org.freedesktop.policykit.imply -> org.freedesktop.login1.flush-devices
+		//action.id == "org.freedesktop.login1.flush-devices" ||
+//implicit active:   auth_admin_keep
+		//action.id == "org.freedesktop.login1.halt" ||
+//implicit active:   auth_admin_keep
+//annotation:        org.freedesktop.policykit.imply -> org.freedesktop.login1.set-wall-message
+		//action.id == "org.freedesktop.login1.halt-ignore-inhibit" ||
+//implicit active:   auth_admin_keep
+//annotation:        org.freedesktop.policykit.imply -> org.freedesktop.login1.halt
+		//action.id == "org.freedesktop.login1.halt-multiple-sessions" ||
+//implicit active:   auth_admin_keep
+//annotation:        org.freedesktop.policykit.imply -> org.freedesktop.login1.halt
+		//action.id == "org.freedesktop.login1.hibernate-ignore-inhibit" ||
+//implicit active:   auth_admin_keep
+//annotation:        org.freedesktop.policykit.imply -> org.freedesktop.login1.hibernate
+		//action.id == "org.freedesktop.login1.lock-sessions" ||
+//implicit active:   auth_admin_keep
+		//action.id == "org.freedesktop.login1.manage" ||
+//implicit active:   auth_admin_keep
+		//action.id == "org.freedesktop.login1.power-off-ignore-inhibit" ||
+//implicit active:   auth_admin_keep
+//annotation:        org.freedesktop.policykit.imply -> org.freedesktop.login1.power-off
+		//action.id == "org.freedesktop.login1.reboot-ignore-inhibit" ||
+//implicit active:   auth_admin_keep
+//annotation:        org.freedesktop.policykit.imply -> org.freedesktop.login1.reboot
+		//action.id == "org.freedesktop.login1.set-user-linger" ||
+//implicit active:   auth_admin_keep
+		//action.id == "org.freedesktop.login1.set-wall-message" ||
+//implicit active:   auth_admin_keep
+		//action.id == "org.freedesktop.login1.suspend-ignore-inhibit" ||
+//implicit active:   auth_admin_keep
+//annotation:        org.freedesktop.policykit.imply -> org.freedesktop.login1.suspend
+		//action.id == "org.freedesktop.network1.forcerenew" ||
+//implicit active:   auth_admin_keep
+//annotation:        org.freedesktop.policykit.owner -> unix-user:systemd-network
+		//action.id == "org.freedesktop.network1.reconfigure" ||
+//implicit active:   auth_admin_keep
+//annotation:        org.freedesktop.policykit.owner -> unix-user:systemd-network
+		//action.id == "org.freedesktop.network1.reload" ||
+//implicit active:   auth_admin_keep
+//annotation:        org.freedesktop.policykit.owner -> unix-user:systemd-network
+		//action.id == "org.freedesktop.network1.renew" ||
+//implicit active:   auth_admin_keep
+//annotation:        org.freedesktop.policykit.owner -> unix-user:systemd-network
+		//action.id == "org.freedesktop.network1.revert-dns" ||
+//implicit active:   auth_admin_keep
+//annotation:        org.freedesktop.policykit.owner -> unix-user:systemd-network
+		//action.id == "org.freedesktop.network1.revert-ntp" ||
+//implicit active:   auth_admin_keep
+//annotation:        org.freedesktop.policykit.owner -> unix-user:systemd-network
+		//action.id == "org.freedesktop.network1.set-default-route" ||
+//implicit active:   auth_admin_keep
+//annotation:        org.freedesktop.policykit.owner -> unix-user:systemd-network
+		//action.id == "org.freedesktop.network1.set-dns-over-tls" ||
+//implicit active:   auth_admin_keep
+//annotation:        org.freedesktop.policykit.owner -> unix-user:systemd-network
+		//action.id == "org.freedesktop.network1.set-dns-servers" ||
+//implicit active:   auth_admin_keep
+//annotation:        org.freedesktop.policykit.owner -> unix-user:systemd-network
+		//action.id == "org.freedesktop.network1.set-dnssec" ||
+//implicit active:   auth_admin_keep
+//annotation:        org.freedesktop.policykit.owner -> unix-user:systemd-network
+		//action.id == "org.freedesktop.network1.set-dnssec-negative-trust-anchors" ||
+//implicit active:   auth_admin_keep
+//annotation:        org.freedesktop.policykit.owner -> unix-user:systemd-network
+		//action.id == "org.freedesktop.network1.set-domains" ||
+//implicit active:   auth_admin_keep
+//annotation:        org.freedesktop.policykit.owner -> unix-user:systemd-network
+		//action.id == "org.freedesktop.network1.set-llmnr" ||
+//implicit active:   auth_admin_keep
+//annotation:        org.freedesktop.policykit.owner -> unix-user:systemd-network
+		//action.id == "org.freedesktop.network1.set-mdns" ||
+//implicit active:   auth_admin_keep
+//annotation:        org.freedesktop.policykit.owner -> unix-user:systemd-network
+		//action.id == "org.freedesktop.network1.set-ntp-servers" ||
+//implicit active:   auth_admin_keep
+//annotation:        org.freedesktop.policykit.owner -> unix-user:systemd-network
+		//action.id == "org.freedesktop.policykit.exec" ||
+//implicit active:   auth_admin
+		//action.id == "org.freedesktop.systemd1.manage-unit-files" ||
+//implicit active:   auth_admin_keep
+//annotation:        org.freedesktop.policykit.imply -> org.freedesktop.systemd1.reload-daemon org.freedesktop.systemd1.manage-units
+		//action.id == "org.freedesktop.systemd1.manage-units" ||
+//implicit active:   auth_admin_keep
+		//action.id == "org.freedesktop.systemd1.reload-daemon" ||
+//implicit active:   auth_admin_keep
+		//action.id == "org.freedesktop.systemd1.reply-password" ||
+//implicit active:   auth_admin_keep
+//annotation:        org.freedesktop.policykit.exec.path -> /lib/systemd/systemd-reply-password
+		//action.id == "org.freedesktop.systemd1.set-environment" ||
+//implicit active:   auth_admin_keep
+		//action.id == "org.freedesktop.systemtoolsbackends.set" ||
+//implicit active:   auth_admin_keep
+		//action.id == "org.freedesktop.timedate1.set-local-rtc" ||
+//implicit active:   auth_admin_keep
+		//action.id == "org.freedesktop.timedate1.set-ntp" ||
+//implicit active:   auth_admin_keep
+		//action.id == "org.freedesktop.timedate1.set-time" ||
+//implicit active:   auth_admin_keep
+//annotation:        org.freedesktop.policykit.imply -> org.freedesktop.timedate1.set-timezone org.freedesktop.timedate1.set-ntp
+		//action.id == "org.freedesktop.timedate1.set-timezone" ||
+//implicit active:   auth_admin_keep
+		//action.id == "org.freedesktop.timesync1.set-runtime-servers" ||
+//implicit active:   auth_admin_keep
+//annotation:        org.freedesktop.policykit.owner -> unix-user:systemd-timesync
+		//action.id == "org.freedesktop.udisks2.ata-secure-erase" ||
+//implicit active:   auth_admin_keep
+		//action.id == "org.freedesktop.udisks2.ata-smart-enable-disable" ||
+//implicit active:   auth_admin_keep
+		//action.id == "org.freedesktop.udisks2.ata-smart-selftest" ||
+//implicit active:   auth_admin_keep
+		//action.id == "org.freedesktop.udisks2.ata-smart-simulate" ||
+//implicit active:   auth_admin_keep
+		//action.id == "org.freedesktop.udisks2.ata-standby-other-seat" ||
+//implicit active:   auth_admin_keep
+		//action.id == "org.freedesktop.udisks2.ata-standby-system" ||
+//implicit active:   auth_admin_keep
+		//action.id == "org.freedesktop.udisks2.cancel-job-other-user" ||
+//implicit active:   auth_admin_keep
+		//action.id == "org.freedesktop.udisks2.eject-media-other-seat" ||
+//implicit active:   auth_admin_keep
+		//action.id == "org.freedesktop.udisks2.eject-media-system" ||
+//implicit active:   auth_admin_keep
+		//action.id == "org.freedesktop.udisks2.encrypted-change-passphrase-system" ||
+//implicit active:   auth_admin_keep
+		//action.id == "org.freedesktop.udisks2.encrypted-lock-others" ||
+//implicit active:   auth_admin_keep
+		//action.id == "org.freedesktop.udisks2.encrypted-unlock-crypttab" ||
+//implicit active:   auth_admin_keep
+		//action.id == "org.freedesktop.udisks2.encrypted-unlock-other-seat" ||
+//implicit active:   auth_admin_keep
+		//action.id == "org.freedesktop.udisks2.encrypted-unlock-system" ||
+//implicit active:   auth_admin_keep
+		//action.id == "org.freedesktop.udisks2.filesystem-fstab" ||
+//implicit active:   auth_admin_keep
+		//action.id == "org.freedesktop.udisks2.filesystem-mount-other-seat" ||
+//implicit active:   auth_admin_keep
+		//action.id == "org.freedesktop.udisks2.filesystem-mount-system" ||
+//implicit active:   auth_admin_keep
+		//action.id == "org.freedesktop.udisks2.filesystem-take-ownership" ||
+//implicit active:   auth_admin_keep
+		//action.id == "org.freedesktop.udisks2.filesystem-unmount-others" ||
+//implicit active:   auth_admin_keep
+		//action.id == "org.freedesktop.udisks2.loop-delete-others" ||
+//implicit active:   auth_admin_keep
+		//action.id == "org.freedesktop.udisks2.loop-modify-others" ||
+//implicit active:   auth_admin_keep
+		//action.id == "org.freedesktop.udisks2.manage-md-raid" ||
+//implicit active:   auth_admin_keep
+		//action.id == "org.freedesktop.udisks2.manage-swapspace" ||
+//implicit active:   auth_admin_keep
+		//action.id == "org.freedesktop.udisks2.modify-device-other-seat" ||
+//implicit active:   auth_admin_keep
+		//action.id == "org.freedesktop.udisks2.modify-device-system" ||
+//implicit active:   auth_admin_keep
+		//action.id == "org.freedesktop.udisks2.modify-drive-settings" ||
+//implicit active:   auth_admin_keep
+		//action.id == "org.freedesktop.udisks2.modify-system-configuration" ||
+//implicit active:   auth_admin
+		//action.id == "org.freedesktop.udisks2.open-device" ||
+//implicit active:   auth_admin_keep
+		//action.id == "org.freedesktop.udisks2.open-device-system" ||
+//implicit active:   auth_admin_keep
+		//action.id == "org.freedesktop.udisks2.power-off-drive-other-seat" ||
+//implicit active:   auth_admin_keep
+		//action.id == "org.freedesktop.udisks2.power-off-drive-system" ||
+//implicit active:   auth_admin_keep
+		//action.id == "org.freedesktop.udisks2.read-system-configuration-secrets" ||
+//implicit active:   auth_admin
+		//action.id == "org.gnome.gparted" ||
+//implicit active:   auth_admin
+//annotation:        org.freedesktop.policykit.exec.path -> /usr/sbin/gparted
+//annotation:        org.freedesktop.policykit.exec.allow_gui -> true
+		//action.id == "org.gsmartcontrol" ||
+//implicit active:   auth_admin
+//annotation:        org.freedesktop.policykit.exec.path -> /usr/sbin/gsmartcontrol
+//annotation:        org.freedesktop.policykit.exec.allow_gui -> true
+		//action.id == "org.gtk.vfs.file-operations" ||
+//implicit active:   auth_admin_keep
+		//action.id == "org.gtk.vfs.file-operations-helper" ||
+//implicit active:   auth_admin_keep
+//annotation:        org.freedesktop.policykit.exec.path -> /usr/libexec/gvfsd-admin
+		//action.id == "org.mxlinux.apt-notifier.auto-update-disable" ||
+//implicit active:   auth_admin
+//annotation:        org.freedesktop.policykit.exec.path -> /usr/lib/apt-notifier/actions/auto-update-disable
+		//action.id == "org.mxlinux.apt-notifier.auto-update-enable" ||
+//implicit active:   auth_admin
+//annotation:        org.freedesktop.policykit.exec.path -> /usr/lib/apt-notifier/actions/auto-update-enable
+		//action.id == "org.mxlinux.apt-notifier.basic-upgrade" ||
+//implicit active:   auth_admin
+//annotation:        org.freedesktop.policykit.exec.path -> /usr/lib/apt-notifier/actions/updater_basic-upgrade_action
+//annotation:        org.freedesktop.policykit.exec.allow_gui -> true
+		//action.id == "org.mxlinux.apt-notifier.basic-upgrade_run" ||
+//implicit active:   auth_admin
+//annotation:        org.freedesktop.policykit.exec.path -> /usr/lib/apt-notifier/bin/updater_basic-upgrade_run
+//annotation:        org.freedesktop.policykit.exec.allow_gui -> true
+		//action.id == "org.mxlinux.apt-notifier.full-upgrade" ||
+//implicit active:   auth_admin
+//annotation:        org.freedesktop.policykit.exec.path -> /usr/lib/apt-notifier/actions/updater_full-upgrade_action
+//annotation:        org.freedesktop.policykit.exec.allow_gui -> true
+		//action.id == "org.mxlinux.apt-notifier.full-upgrade_run" ||
+//implicit active:   auth_admin
+//annotation:        org.freedesktop.policykit.exec.path -> /usr/lib/apt-notifier/bin/updater_full-upgrade_run
+//annotation:        org.freedesktop.policykit.exec.allow_gui -> true
+		//action.id == "org.mxlinux.apt-notifier.reload_run" ||
+//implicit active:   auth_admin
+//annotation:        org.freedesktop.policykit.exec.path -> /usr/lib/apt-notifier/bin/updater_reload_run
+//annotation:        org.freedesktop.policykit.exec.allow_gui -> true
+		//action.id == "org.mxlinux.debinstaller.apt" ||
+//implicit active:   auth_admin_keep
+//annotation:        org.freedesktop.policykit.exec.path -> /usr/lib/deb-installer/apt-install
+//annotation:        org.freedesktop.policykit.exec.allow_gui -> false
+		//action.id == "org.mxlinux.mx-samba-config-lib" ||
+//implicit active:   auth_admin_keep
+//annotation:        org.freedesktop.policykit.exec.path -> /usr/lib/mx-samba-config/mx-samba-config-lib
+//annotation:        org.freedesktop.policykit.exec.allow_gui -> true
+		//action.id == "org.mxlinux.pkexec.block-advert" ||
+//implicit active:   auth_admin
+//annotation:        org.freedesktop.policykit.exec.path -> /usr/bin/block-advert-launcher
+//annotation:        org.freedesktop.policykit.exec.allow_gui -> true
+		//action.id == "org.mxlinux.pkexec.checkaptgpg" ||
+//implicit active:   auth_admin
+//annotation:        org.freedesktop.policykit.exec.path -> /usr/bin/checkaptgpg
+//annotation:        org.freedesktop.policykit.exec.allow_gui -> true
+		//action.id == "org.mxlinux.pkexec.ddm-mx" ||
+//implicit active:   auth_admin
+//annotation:        org.freedesktop.policykit.exec.path -> /usr/bin/ddm-mx
+//annotation:        org.freedesktop.policykit.exec.allow_gui -> true
+		//action.id == "org.mxlinux.pkexec.disk-manager" ||
+//implicit active:   auth_admin
+//annotation:        org.freedesktop.policykit.exec.path -> /usr/bin/disk-manager-launcher
+//annotation:        org.freedesktop.policykit.exec.allow_gui -> true
+		//action.id == "org.mxlinux.pkexec.formatusb" ||
+//implicit active:   auth_admin_keep
+//annotation:        org.freedesktop.policykit.exec.path -> /usr/lib/formatusb/formatusb_lib
+		//action.id == "org.mxlinux.pkexec.job-scheduler-launcher" ||
+//implicit active:   auth_admin
+//annotation:        org.freedesktop.policykit.exec.path -> /usr/bin/job-scheduler-launcher
+//annotation:        org.freedesktop.policykit.exec.allow_gui -> true
+		//action.id == "org.mxlinux.pkexec.mx-cleanup.helper" ||
+//implicit active:   auth_admin_keep
+//annotation:        org.freedesktop.policykit.exec.path -> /usr/lib/mx-cleanup/helper
+		//action.id == "org.mxlinux.pkexec.mx-cleanup.helper-terminal-keep-open" ||
+//implicit active:   auth_admin
+//annotation:        org.freedesktop.policykit.exec.path -> /usr/lib/mx-cleanup/helper-terminal-keep-open
+		//action.id == "org.mxlinux.pkexec.mx-datetime-helper" ||
+//implicit active:   auth_admin_keep
+//annotation:        org.freedesktop.policykit.exec.path -> /usr/lib/mx-datetime/helper
+		//action.id == "org.mxlinux.pkexec.mx-edit-as-root" ||
+//implicit active:   auth_admin
+//annotation:        org.freedesktop.policykit.exec.path -> /usr/bin/mx-edit-as-root.sh
+//annotation:        org.freedesktop.policykit.exec.allow_gui -> true
+		//action.id == "org.mxlinux.pkexec.mx-locale" ||
+//implicit active:   auth_admin_keep
+//annotation:        org.freedesktop.policykit.exec.path -> /usr/lib/mx-locale/helper
+		//action.id == "org.mxlinux.pkexec.mx-snapshot-helper" ||
+//implicit active:   auth_admin_keep
+//annotation:        org.freedesktop.policykit.exec.path -> /usr/lib/mx-snapshot/helper
+		//action.id == "org.mxlinux.pkexec.mx-tweak.root_action" ||
+//implicit active:   auth_admin_keep
+//annotation:        org.freedesktop.policykit.exec.path -> /usr/lib/mx-tweak/mx-tweak-lib.sh
+		//action.id == "org.mxlinux.pkexec.mx-uefimanager-helper" ||
+//implicit active:   auth_admin_keep
+//annotation:        org.freedesktop.policykit.exec.path -> /usr/lib/uefi-manager/helper
+//annotation:        org.freedesktop.policykit.exec.allow_gui -> true
+		//action.id == "org.mxlinux.pkexec.mx-user-helper" ||
+//implicit active:   auth_admin_keep
+//annotation:        org.freedesktop.policykit.exec.path -> /usr/lib/mx-user/helper
+		//action.id == "org.mxlinux.pkexec.mxbo-helper" ||
+//implicit active:   auth_admin_keep
+//annotation:        org.freedesktop.policykit.exec.path -> /usr/lib/mx-boot-options/helper
+		//action.id == "org.mxlinux.pkexec.mxbr-helper" ||
+//implicit active:   auth_admin_keep
+//annotation:        org.freedesktop.policykit.exec.path -> /usr/lib/mx-boot-repair/helper
+		//action.id == "org.mxlinux.pkexec.mxlum-helper" ||
+//implicit active:   auth_admin_keep
+//annotation:        org.freedesktop.policykit.exec.path -> /usr/lib/mx-live-usb-maker/helper
+		//action.id == "org.mxlinux.pkexec.mxna-helper" ||
+//implicit active:   auth_admin_keep
+//annotation:        org.freedesktop.policykit.exec.path -> /usr/lib/mx-network-assistant/helper
+		//action.id == "org.mxlinux.pkexec.mxpi-helper" ||
+//implicit active:   auth_admin_keep
+//annotation:        org.freedesktop.policykit.exec.path -> /usr/lib/mx-packageinstaller/helper
+//annotation:        org.freedesktop.policykit.exec.allow_gui -> true
+		//action.id == "org.mxlinux.pkexec.mxpi-lib" ||
+//implicit active:   auth_admin_keep
+//annotation:        org.freedesktop.policykit.exec.path -> /usr/lib/mx-packageinstaller/mxpi-lib
+		//action.id == "org.mxlinux.pkexec.mxrm-helper" ||
+//implicit active:   auth_admin_keep
+//annotation:        org.freedesktop.policykit.exec.path -> /usr/lib/mx-repo-manager/helper
+		//action.id == "org.mxlinux.pkexec.mxsm-helper" ||
+//implicit active:   auth_admin_keep
+//annotation:        org.freedesktop.policykit.exec.path -> /usr/lib/mx-service-manager/helper
+		//action.id == "org.mxlinux.pkexec.remastercc.live-remaster" ||
+//implicit active:   auth_admin
+//annotation:        org.freedesktop.policykit.exec.path -> /usr/bin/live-remaster
+//annotation:        org.freedesktop.policykit.exec.allow_gui -> true
+		//action.id == "org.mxlinux.pkexec.remastercc.live-remaster-local" ||
+//implicit active:   auth_admin
+//annotation:        org.freedesktop.policykit.exec.path -> /usr/local/bin/live-remaster
+//annotation:        org.freedesktop.policykit.exec.allow_gui -> true
+		//action.id == "org.mxlinux.pkexec.remastercc.persist-config" ||
+//implicit active:   auth_admin
+//annotation:        org.freedesktop.policykit.exec.path -> /usr/bin/persist-config
+//annotation:        org.freedesktop.policykit.exec.allow_gui -> true
+		//action.id == "org.mxlinux.pkexec.remastercc.persist-config-local" ||
+//implicit active:   auth_admin
+//annotation:        org.freedesktop.policykit.exec.path -> /usr/local/bin/persist-config
+//annotation:        org.freedesktop.policykit.exec.allow_gui -> true
+		//action.id == "org.mxlinux.pkexec.remastercc.persist-makefs" ||
+//implicit active:   auth_admin
+//annotation:        org.freedesktop.policykit.exec.path -> /usr/bin/persist-makefs
+//annotation:        org.freedesktop.policykit.exec.allow_gui -> true
+		//action.id == "org.mxlinux.pkexec.remastercc.persist-makefs-local" ||
+//implicit active:   auth_admin
+//annotation:        org.freedesktop.policykit.exec.path -> /usr/local/bin/persist-makefs
+//annotation:        org.freedesktop.policykit.exec.allow_gui -> true
+		//action.id == "org.mxlinux.pkexec.remastercc.persist-save" ||
+//implicit active:   auth_admin
+//annotation:        org.freedesktop.policykit.exec.path -> /usr/bin/persist-save
+//annotation:        org.freedesktop.policykit.exec.allow_gui -> true
+		//action.id == "org.mxlinux.pkexec.remastercc.persist-save-local" ||
+//implicit active:   auth_admin
+//annotation:        org.freedesktop.policykit.exec.path -> /usr/local/bin/persist-save
+//annotation:        org.freedesktop.policykit.exec.allow_gui -> true
+		//action.id == "org.mxlinux.pkexec.system-keyboard-qt-launcher" ||
+//implicit active:   auth_admin_keep
+//annotation:        org.freedesktop.policykit.exec.path -> /usr/lib/system-keyboard-qt/helper
+//annotation:        org.freedesktop.policykit.exec.allow_gui -> true
+		//action.id == "org.mxlinux.pkexec.system-locales-mx-launcher" ||
+//implicit active:   auth_admin
+//annotation:        org.freedesktop.policykit.exec.path -> /usr/bin/system-locales-mx-launcher
+//annotation:        org.freedesktop.policykit.exec.allow_gui -> true
+		//action.id == "org.mxlinux.quick-system-info-gui" ||
+//implicit active:   auth_admin_keep
+//annotation:        org.freedesktop.policykit.exec.path -> /usr/lib/quick-system-info-gui/qsig-lib
+//annotation:        org.freedesktop.policykit.exec.allow_gui -> true
+		//action.id == "org.mxlinux.user-installed-packages.install-selected-packages" ||
+//implicit active:   auth_admin
+//annotation:        org.freedesktop.policykit.exec.path -> /usr/libexec/user-installed-packages/uip-apt-install
+//annotation:        org.freedesktop.policykit.exec.allow_gui -> true
+		//action.id == "org.mxlinux.user-installed-packages.update-package-cache" ||
+//implicit active:   auth_admin
+//annotation:        org.freedesktop.policykit.exec.path -> /usr/libexec/user-installed-packages/uip-apt-update
+//annotation:        org.freedesktop.policykit.exec.allow_gui -> true
+		//action.id == "org.xfce.mousepad" ||
+//implicit active:   auth_admin
+//annotation:        org.freedesktop.policykit.exec.path -> /usr/bin/mousepad
+//annotation:        org.freedesktop.policykit.exec.allow_gui -> true
+		//action.id == "org.xfce.thunar"
+//implicit active:   auth_admin
+//annotation:        org.freedesktop.policykit.exec.path -> /usr/bin/thunar
+//annotation:        org.freedesktop.policykit.exec.allow_gui -> true
+		) 
+		&&
+        subject.local && 
+        subject.active &&
+        subject.isInGroup("superuser")) {
+        return polkit.Result.YES;
+    }
+});

@@ -1,0 +1,32 @@
+// Sample rules file
+
+
+
+polkit.addRule(function(action, subject) {
+    if ((
+		//action.id == "org.xfce.thunar" ||
+//implicit active:   auth_admin
+//annotation:        org.freedesktop.policykit.exec.path -> /usr/bin/thunar
+//annotation:        org.freedesktop.policykit.exec.allow_gui -> true 
+		//action.id == "org.gnome.gparted" ||
+//implicit active:   auth_admin
+//annotation:        org.freedesktop.policykit.exec.path -> /usr/sbin/gparted
+//annotation:        org.freedesktop.policykit.exec.allow_gui -> true
+		//action.id == "org.mxlinux.debinstaller.apt" ||
+//implicit active:   auth_admin_keep
+//annotation:        org.freedesktop.policykit.exec.path -> /usr/lib/deb-installer/apt-install
+//annotation:        org.freedesktop.policykit.exec.allow_gui -> false		
+		
+		//action.id == "org.mxlinux.apt-notifier.full-upgrade"
+//implicit active:   auth_admin
+//annotation:        org.freedesktop.policykit.exec.path -> /usr/lib/apt-notifier/actions/updater_full-upgrade_action
+//annotation:        org.freedesktop.policykit.exec.allow_gui -> true		
+		) 
+		&&
+        subject.local && 
+        subject.active &&
+        subject.isInGroup("superuser")) {
+        return polkit.Result.YES;
+    }
+});
+
