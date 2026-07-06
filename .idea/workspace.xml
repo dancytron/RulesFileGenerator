@@ -5,13 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="fcee2f3f-77f4-4e22-a679-5c1181bdb2ff" name="Changes" comment="add readme and test files, New project name.">
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/rules file generator.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -34,23 +28,23 @@
   </component>
   <component name="NextEditCompletionFeaturesState">
     <decayedCancelled>
-      <entry key="MS100" value="1.0743217804481977" />
-      <entry key="MS500" value="3.0651958200547025" />
-      <entry key="S2" value="10.206212316481203" />
-      <entry key="S5" value="19.80749671166437" />
-      <entry key="S10" value="27.53055520594726" />
-      <entry key="S30" value="41.24910299240238" />
-      <entry key="S60" value="59.100082717243566" />
-      <entry key="M2" value="83.9839375603921" />
-      <entry key="M5" value="119.55573972008025" />
-      <entry key="M10" value="140.47513168981888" />
-      <entry key="M15" value="149.1735701613087" />
-      <entry key="M30" value="158.9589422784289" />
-      <entry key="H1" value="164.31090966277964" />
-      <entry key="H2" value="167.11176385038056" />
-      <entry key="H4" value="168.54475868913028" />
-      <entry key="D1" value="169.75589755112284" />
-      <entry key="W1" value="169.9650897346348" />
+      <entry key="MS100" value="1.3106638272891302" />
+      <entry key="MS500" value="3.39160518444501" />
+      <entry key="S2" value="10.592292513883695" />
+      <entry key="S5" value="20.322028513172015" />
+      <entry key="S10" value="28.191084714514837" />
+      <entry key="S30" value="42.0788581425439" />
+      <entry key="S60" value="59.977996574858956" />
+      <entry key="M2" value="84.89714770202185" />
+      <entry key="M5" value="120.50630434154186" />
+      <entry key="M10" value="141.44608599388118" />
+      <entry key="M15" value="150.15300661890845" />
+      <entry key="M30" value="159.9479856739745" />
+      <entry key="H1" value="165.30524681474404" />
+      <entry key="H2" value="168.10888413691737" />
+      <entry key="H4" value="169.5433064792722" />
+      <entry key="D1" value="170.75565377604212" />
+      <entry key="W1" value="170.96505486668653" />
     </decayedCancelled>
     <decayedSelected>
       <entry key="MS100" value="0.0" />
@@ -72,23 +66,23 @@
       <entry key="W1" value="0.0" />
     </decayedSelected>
     <decayedShown>
-      <entry key="MS100" value="1.026859558211658" />
-      <entry key="MS500" value="3.020156281394705" />
-      <entry key="S2" value="10.163413625714686" />
-      <entry key="S5" value="19.773682159002757" />
-      <entry key="S10" value="27.506861312502583" />
-      <entry key="S30" value="41.23689077940375" />
-      <entry key="S60" value="59.09021507842199" />
-      <entry key="M2" value="83.97573630447846" />
-      <entry key="M5" value="119.55044408037354" />
-      <entry key="M10" value="140.47188773167682" />
-      <entry key="M15" value="149.17124267242212" />
-      <entry key="M30" value="158.95768598463292" />
-      <entry key="H1" value="164.3102562464981" />
-      <entry key="H2" value="167.11143053566144" />
-      <entry key="H4" value="168.54459034244545" />
-      <entry key="D1" value="169.75586925544158" />
-      <entry key="W1" value="169.96508568652558" />
+      <entry key="MS100" value="0.586111125354729" />
+      <entry key="MS500" value="3.1367087681501418" />
+      <entry key="S2" value="10.49191665143109" />
+      <entry key="S5" value="20.264533415949074" />
+      <entry key="S10" value="28.15535230200284" />
+      <entry key="S30" value="42.062569094625474" />
+      <entry key="S60" value="59.9660835676577" />
+      <entry key="M2" value="84.88792151116193" />
+      <entry key="M5" value="120.5005973992352" />
+      <entry key="M10" value="141.44263593895482" />
+      <entry key="M15" value="150.15054160109526" />
+      <entry key="M30" value="159.9466605395107" />
+      <entry key="H1" value="165.30455895675775" />
+      <entry key="H2" value="168.10853359568142" />
+      <entry key="H4" value="169.54312951787045" />
+      <entry key="D1" value="170.75562404436843" />
+      <entry key="W1" value="170.96505061343044" />
     </decayedShown>
   </component>
   <component name="ProjectColorInfo">{
@@ -119,7 +113,7 @@
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
     &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
     &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;com.intellij.mcpserver.settings&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;ml.llm.mcp&quot;,
     &quot;to.speed.mode.migration.done&quot;: &quot;true&quot;,
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
@@ -133,7 +127,9 @@
       <updated>1783298218382</updated>
       <workItem from="1783298219428" duration="990000" />
       <workItem from="1783299275295" duration="183000" />
-      <workItem from="1783342711334" duration="658000" />
+      <workItem from="1783342711334" duration="783000" />
+      <workItem from="1783343546735" duration="307000" />
+      <workItem from="1783344492612" duration="173000" />
     </task>
     <task id="LOCAL-00001" summary="first draft">
       <option name="closed" value="true" />
@@ -159,7 +155,15 @@
       <option name="project" value="LOCAL" />
       <updated>1783299391003</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="add readme and test files, New project name.">
+      <option name="closed" value="true" />
+      <created>1783343482677</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1783343482678</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
