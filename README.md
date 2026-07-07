@@ -1,5 +1,16 @@
 ### pkaction Rules Generator
 
+### Written by human
+
+This should work on any linux using pkexec for privilege escalation. Tested on MX 23.
+
+To use, place the .rules file in the /etc/polkit-1/rules.d/ directory and uncomment the entries that correspond to the
+programs that you wish to no longer enter your password for pkexec privilege escalation for that program. 
+
+The easiest way to do this is in geany set for document format "javascript source" and use the uncomment command.
+
+### Written by AI below this point
+
 This project creates Polkit `.rules` files from terminal output saved in `pkaction.txt`.
 
 The script reads each section in `pkaction.txt`, finds entries whose `implicit active` value is `auth_admin` or `auth_admin_keep`, and writes those entries to dated rules files named `pkaction.{date}.rules` and `pkaction_compact{date}.rules`.

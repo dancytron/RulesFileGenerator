@@ -1,0 +1,20 @@
+// Sample rules file #2
+
+
+
+polkit.addRule(function(action, subject) {
+    if ((
+//auth_admin    
+		//action.id == "org.xfce.thunar" ||
+		//action.id == "org.gnome.gparted" ||
+//auth_admin_keep		
+		//action.id == "org.mxlinux.debinstaller.apt"	
+		) 
+		&&
+        subject.local && 
+        subject.active &&
+        subject.isInGroup("superuser")) {
+        return polkit.Result.YES;
+    }
+});
+
