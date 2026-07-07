@@ -4,9 +4,9 @@
     <option name="autoReloadType" value="ALL" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="fcee2f3f-77f4-4e22-a679-5c1181bdb2ff" name="Changes" comment="Added compact format for .rules file (no comments and sorted)">
+    <list default="true" id="fcee2f3f-77f4-4e22-a679-5c1181bdb2ff" name="Changes" comment="minor grammar corrections in readme.me">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -35,29 +35,32 @@
     &quot;accountId&quot;: &quot;e474904d-6828-45fe-b7cd-93c2571c70c1&quot;
   }
 }</component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/README.md" root0="FORCE_HIGHLIGHTING" root1="SKIP_HIGHLIGHTING" />
+  </component>
   <component name="McpProjectServerCommands">
     <commands />
     <urls />
   </component>
   <component name="NextEditCompletionFeaturesState">
     <decayedCancelled>
-      <entry key="MS100" value="1.0000000029431335" />
-      <entry key="MS500" value="1.0208509899311262" />
-      <entry key="S2" value="1.9156324351052394" />
-      <entry key="S5" value="4.500218952824106" />
-      <entry key="S10" value="7.881213507796162" />
-      <entry key="S30" value="14.869376364678857" />
-      <entry key="S60" value="25.577711337476266" />
-      <entry key="M2" value="48.57666682852516" />
-      <entry key="M5" value="110.8717204269045" />
-      <entry key="M10" value="197.9335561454476" />
-      <entry key="M15" value="265.3156591555193" />
-      <entry key="M30" value="386.0817459846655" />
-      <entry key="H1" value="483.4088049368994" />
-      <entry key="H2" value="546.4405200393625" />
-      <entry key="H4" value="582.4881342030941" />
-      <entry key="D1" value="615.1584719408708" />
-      <entry key="W1" value="621.0161488185138" />
+      <entry key="MS100" value="1.0" />
+      <entry key="MS500" value="1.000000394355574" />
+      <entry key="S2" value="1.0262104912369352" />
+      <entry key="S5" value="1.7155939578265236" />
+      <entry key="S10" value="6.946293968324965" />
+      <entry key="S30" value="37.60947660430856" />
+      <entry key="S60" value="62.632729404182996" />
+      <entry key="M2" value="82.78068622179201" />
+      <entry key="M5" value="115.54163401843118" />
+      <entry key="M10" value="182.53651262974176" />
+      <entry key="M15" value="250.29933845060742" />
+      <entry key="M30" value="397.7501070539651" />
+      <entry key="H1" value="536.5655744023974" />
+      <entry key="H2" value="634.6798968011152" />
+      <entry key="H4" value="693.4582138425319" />
+      <entry key="D1" value="748.3237491015977" />
+      <entry key="W1" value="758.3169583270343" />
     </decayedCancelled>
     <decayedSelected>
       <entry key="MS100" value="0.0" />
@@ -79,23 +82,23 @@
       <entry key="W1" value="0.0" />
     </decayedSelected>
     <decayedShown>
-      <entry key="MS100" value="0.8350879220993194" />
-      <entry key="MS500" value="0.9850494679381248" />
-      <entry key="S2" value="1.9022232701980888" />
-      <entry key="S5" value="4.489754670345723" />
-      <entry key="S10" value="7.872528824748657" />
-      <entry key="S30" value="14.863901532148793" />
-      <entry key="S60" value="25.572532944810494" />
-      <entry key="M2" value="48.57130297650054" />
-      <entry key="M5" value="110.86697301581425" />
-      <entry key="M10" value="197.9295643181374" />
-      <entry key="M15" value="265.3121521309171" />
-      <entry key="M30" value="386.07920743775645" />
-      <entry key="H1" value="483.40720917774786" />
-      <entry key="H2" value="546.4396145885654" />
-      <entry key="H4" value="582.4876504429055" />
-      <entry key="D1" value="615.1583866004088" />
-      <entry key="W1" value="621.0161365059312" />
+      <entry key="MS100" value="0.9592641193252643" />
+      <entry key="MS500" value="0.9917171218273139" />
+      <entry key="S2" value="1.0240782396828756" />
+      <entry key="S5" value="1.7139725675767656" />
+      <entry key="S10" value="6.942015736092003" />
+      <entry key="S30" value="37.600701293560704" />
+      <entry key="S60" value="62.6252409402003" />
+      <entry key="M2" value="82.77554581317081" />
+      <entry key="M5" value="115.53822475750526" />
+      <entry key="M10" value="182.53340888664843" />
+      <entry key="M15" value="250.29636397078193" />
+      <entry key="M30" value="397.7476389886514" />
+      <entry key="H1" value="536.5638739943632" />
+      <entry key="H2" value="634.6788802118589" />
+      <entry key="H4" value="693.4576554213712" />
+      <entry key="D1" value="748.3236482030443" />
+      <entry key="W1" value="758.3169437088335" />
     </decayedShown>
   </component>
   <component name="ProjectColorInfo">{
@@ -146,7 +149,7 @@
       <workItem from="1783344492612" duration="2116000" />
       <workItem from="1783361305130" duration="94000" />
       <workItem from="1783440125523" duration="1074000" />
-      <workItem from="1783441984959" duration="533000" />
+      <workItem from="1783441984959" duration="1523000" />
     </task>
     <task id="LOCAL-00001" summary="first draft">
       <option name="closed" value="true" />
@@ -204,7 +207,31 @@
       <option name="project" value="LOCAL" />
       <updated>1783441175013</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Added compact format for .rules file (no comments and sorted)">
+      <option name="closed" value="true" />
+      <created>1783442548051</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1783442548051</updated>
+    </task>
+    <task id="LOCAL-00009" summary="Added human written instructions on how to use .rules file to readme.md.">
+      <option name="closed" value="true" />
+      <created>1783442605428</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1783442605428</updated>
+    </task>
+    <task id="LOCAL-00010" summary="minor grammar corrections in readme.me">
+      <option name="closed" value="true" />
+      <created>1783442819543</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1783442819543</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -228,14 +255,16 @@
     <MESSAGE value="first draft" />
     <MESSAGE value="add readme and test files, New project name." />
     <MESSAGE value="Added compact format for .rules file (no comments and sorted)" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added compact format for .rules file (no comments and sorted)" />
+    <MESSAGE value="Added human written instructions on how to use .rules file to readme.md." />
+    <MESSAGE value="minor grammar corrections in readme.me" />
+    <option name="LAST_COMMIT_MESSAGE" value="minor grammar corrections in readme.me" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/main.py</url>
-          <line>32</line>
+          <line>34</line>
           <option name="timeStamp" value="1" />
         </line-breakpoint>
       </breakpoints>

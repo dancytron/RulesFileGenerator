@@ -11,10 +11,12 @@ INPUT_FILE_NAME = "pkaction.txt"
 COMPACT_OUTPUT_FILE_PREFIX = "pkaction_compact"
 
 
+# Remove all whitespace from a string.
 def compact_spaces(value: str) -> str:
     return "".join(value.split())
 
 
+# Split pkaction output into non-empty sections.
 def parse_sections(text: str) -> list[list[str]]:
     sections = []
     current_section = []
@@ -32,6 +34,7 @@ def parse_sections(text: str) -> list[list[str]]:
     return sections
 
 
+# Find the implicit active value in a section.
 def get_implicit_active_value(section: list[str]) -> str | None:
     for line in section:
         compact_line = compact_spaces(line)
@@ -43,10 +46,12 @@ def get_implicit_active_value(section: list[str]) -> str | None:
     return None
 
 
+# Extract the action ID from a section.
 def get_action_id(section: list[str]) -> str:
     return section[0].strip().removesuffix(":")
 
 
+# Collect sections with matching implicit active values.
 def get_matching_sections(text: str) -> tuple[list[list[str]], Counter[str]]:
     matching_sections = []
     counts: Counter[str] = Counter()
@@ -60,6 +65,7 @@ def get_matching_sections(text: str) -> tuple[list[list[str]], Counter[str]]:
     return matching_sections, counts
 
 
+# Build the detailed Polkit rules file content.
 def build_rules_file(sections: list[list[str]]) -> str:
     lines = [
         "// Generated from pkaction.txt",
@@ -92,6 +98,7 @@ def build_rules_file(sections: list[list[str]]) -> str:
     return "\n".join(lines)
 
 
+# Group and sort action IDs by implicit active value.
 def get_sorted_action_ids_by_implicit_active(sections: list[list[str]]) -> dict[str, list[str]]:
     action_ids_by_implicit_active = {
         AUTH_ADMIN: [],
@@ -109,6 +116,7 @@ def get_sorted_action_ids_by_implicit_active(sections: list[list[str]]) -> dict[
     return action_ids_by_implicit_active
 
 
+# Build the compact Polkit rules file content.
 def build_compact_rules_file(sections: list[list[str]]) -> str:
     action_ids_by_implicit_active = get_sorted_action_ids_by_implicit_active(sections)
     sorted_action_ids = [
@@ -147,6 +155,7 @@ def build_compact_rules_file(sections: list[list[str]]) -> str:
     return "\n".join(lines)
 
 
+# Create dated detailed and compact rules files.
 def create_rules_file(script_dir: Path, today: date | None = None) -> tuple[Path, Path, Counter[str]]:
     if today is None:
         today = date.today()
@@ -163,6 +172,7 @@ def create_rules_file(script_dir: Path, today: date | None = None) -> tuple[Path
     return output_path, compact_output_path, counts
 
 
+# Run the rules file generator and print a summary.
 def main() -> None:
     script_dir = Path(__file__).resolve().parent
     output_path, compact_output_path, counts = create_rules_file(script_dir)
