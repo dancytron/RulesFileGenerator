@@ -1,15 +1,17 @@
 ### pkaction Rules Generator
 
-This project creates a Polkit `.rules` file from terminal output saved in `pkaction.txt`.
+This project creates Polkit `.rules` files from terminal output saved in `pkaction.txt`.
 
-The script reads each section in `pkaction.txt`, finds entries whose `implicit active` value is `auth_admin` or `auth_admin_keep`, and writes those entries to a dated rules file named `pkaction.{date}.rules`.
+The script reads each section in `pkaction.txt`, finds entries whose `implicit active` value is `auth_admin` or `auth_admin_keep`, and writes those entries to dated rules files named `pkaction.{date}.rules` and `pkaction_compact{date}.rules`.
 
 ### Files
 
 - `main.py` — Runs the parser and creates the rules file.
 - `pkaction.txt` — Input file containing the output from `pkaction -v`.
-- `FormatSample.rules` — Example of the expected rules file format.
-- `pkaction.{date}.rules` — Output file created by the script.
+- `FormatSample.rules` — Example of the expected detailed rules file format.
+- `FormatSample2.rules` — Example of the expected compact rules file format.
+- `pkaction.{date}.rules` — Detailed output file created by the script.
+- `pkaction_compact{date}.rules` — Compact output file created by the script with sorted `auth_admin` and `auth_admin_keep` action IDs grouped under matching comments.
 - `test_main.py` — Unit tests for the parser and file creation logic.
 
 ### How to Use
@@ -27,16 +29,18 @@ pkaction -v > pkaction.txt
 python3 main.py
 ```
 
-4. When the script finishes, it creates a rules file in the same directory using the current date in the filename, for example:
+4. When the script finishes, it creates detailed and compact rules files in the same directory using the current date in the filenames, for example:
 
 ```text
 pkaction.2026-07-05.rules
+pkaction_compact2026-07-05.rules
 ```
 
 5. The terminal also shows how many entries were found for each matching value:
 
 ```text
 Created pkaction.2026-07-05.rules
+Created pkaction_compact2026-07-05.rules
 implicit active: auth_admin: 43
 implicit active: auth_admin_keep: 120
 ```

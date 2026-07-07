@@ -4,8 +4,11 @@
     <option name="autoReloadType" value="ALL" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="fcee2f3f-77f4-4e22-a679-5c1181bdb2ff" name="Changes" comment="add readme and test files, New project name.">
+    <list default="true" id="fcee2f3f-77f4-4e22-a679-5c1181bdb2ff" name="Changes" comment="push to github">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test_main.py" beforeDir="false" afterPath="$PROJECT_DIR$/test_main.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -13,38 +16,50 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="EmbeddingIndexingInfo">
-    <option name="cachedIndexableFilesCount" value="14" />
+    <option name="cachedIndexableFilesCount" value="15" />
     <option name="fileBasedEmbeddingIndicesEnabled" value="true" />
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;dancytron&quot;
+  }
+}</component>
   <component name="GithubDefaultAccount">
     <option name="defaultAccountId" value="e474904d-6828-45fe-b7cd-93c2571c70c1" />
   </component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/dancytron/RulesFileGenerator.git&quot;,
+    &quot;accountId&quot;: &quot;e474904d-6828-45fe-b7cd-93c2571c70c1&quot;
+  }
+}</component>
   <component name="McpProjectServerCommands">
     <commands />
     <urls />
   </component>
   <component name="NextEditCompletionFeaturesState">
     <decayedCancelled>
-      <entry key="MS100" value="1.3106638272891302" />
-      <entry key="MS500" value="3.39160518444501" />
-      <entry key="S2" value="10.592292513883695" />
-      <entry key="S5" value="20.322028513172015" />
-      <entry key="S10" value="28.191084714514837" />
-      <entry key="S30" value="42.0788581425439" />
-      <entry key="S60" value="59.977996574858956" />
-      <entry key="M2" value="84.89714770202185" />
-      <entry key="M5" value="120.50630434154186" />
-      <entry key="M10" value="141.44608599388118" />
-      <entry key="M15" value="150.15300661890845" />
-      <entry key="M30" value="159.9479856739745" />
-      <entry key="H1" value="165.30524681474404" />
-      <entry key="H2" value="168.10888413691737" />
-      <entry key="H4" value="169.5433064792722" />
-      <entry key="D1" value="170.75565377604212" />
-      <entry key="W1" value="170.96505486668653" />
+      <entry key="MS100" value="1.847257871215929" />
+      <entry key="MS500" value="4.422738537768533" />
+      <entry key="S2" value="10.892812467553249" />
+      <entry key="S5" value="22.52443563186498" />
+      <entry key="S10" value="39.65847529191834" />
+      <entry key="S30" value="81.58601925335431" />
+      <entry key="S60" value="106.90728342535908" />
+      <entry key="M2" value="126.9412768548997" />
+      <entry key="M5" value="166.26069547499444" />
+      <entry key="M10" value="229.25197229589395" />
+      <entry key="M15" value="277.3245881137685" />
+      <entry key="M30" value="357.10124868885845" />
+      <entry key="H1" value="416.12392172993765" />
+      <entry key="H2" value="452.3340320390316" />
+      <entry key="H4" value="472.43188188242766" />
+      <entry key="D1" value="490.298344683116" />
+      <entry key="W1" value="493.4685064324742" />
     </decayedCancelled>
     <decayedSelected>
       <entry key="MS100" value="0.0" />
@@ -66,23 +81,23 @@
       <entry key="W1" value="0.0" />
     </decayedSelected>
     <decayedShown>
-      <entry key="MS100" value="0.586111125354729" />
-      <entry key="MS500" value="3.1367087681501418" />
-      <entry key="S2" value="10.49191665143109" />
-      <entry key="S5" value="20.264533415949074" />
-      <entry key="S10" value="28.15535230200284" />
-      <entry key="S30" value="42.062569094625474" />
-      <entry key="S60" value="59.9660835676577" />
-      <entry key="M2" value="84.88792151116193" />
-      <entry key="M5" value="120.5005973992352" />
-      <entry key="M10" value="141.44263593895482" />
-      <entry key="M15" value="150.15054160109526" />
-      <entry key="M30" value="159.9466605395107" />
-      <entry key="H1" value="165.30455895675775" />
-      <entry key="H2" value="168.10853359568142" />
-      <entry key="H4" value="169.54312951787045" />
-      <entry key="D1" value="170.75562404436843" />
-      <entry key="W1" value="170.96505061343044" />
+      <entry key="MS100" value="1.7174519521380143" />
+      <entry key="MS500" value="4.363874129513595" />
+      <entry key="S2" value="10.846612067334796" />
+      <entry key="S5" value="22.478386141752942" />
+      <entry key="S10" value="39.617611903902336" />
+      <entry key="S30" value="81.55985674644525" />
+      <entry key="S60" value="106.89061585569704" />
+      <entry key="M2" value="126.93155071175674" />
+      <entry key="M5" value="166.25560506454363" />
+      <entry key="M10" value="229.2482685031308" />
+      <entry key="M15" value="277.3214779287534" />
+      <entry key="M30" value="357.0991373381906" />
+      <entry key="H1" value="416.12265411122524" />
+      <entry key="H2" value="452.3333322917489" />
+      <entry key="H4" value="472.4315135834087" />
+      <entry key="D1" value="490.2982805586102" />
+      <entry key="W1" value="493.46849720219205" />
     </decayedShown>
   </component>
   <component name="ProjectColorInfo">{
@@ -101,6 +116,7 @@
     &quot;Python.main.executor&quot;: &quot;Run&quot;,
     &quot;RunOnceActivity.MCP Project settings loaded&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.typescript.service.memoryLimit.init&quot;: &quot;true&quot;,
     &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
@@ -113,7 +129,7 @@
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
     &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
     &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;ml.llm.mcp&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;org.jetbrains.plugins.github.ui.GithubSettingsConfigurable&quot;,
     &quot;to.speed.mode.migration.done&quot;: &quot;true&quot;,
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
@@ -129,7 +145,9 @@
       <workItem from="1783299275295" duration="183000" />
       <workItem from="1783342711334" duration="783000" />
       <workItem from="1783343546735" duration="307000" />
-      <workItem from="1783344492612" duration="173000" />
+      <workItem from="1783344492612" duration="2116000" />
+      <workItem from="1783361305130" duration="94000" />
+      <workItem from="1783440125523" duration="964000" />
     </task>
     <task id="LOCAL-00001" summary="first draft">
       <option name="closed" value="true" />
@@ -163,11 +181,30 @@
       <option name="project" value="LOCAL" />
       <updated>1783343482678</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="add readme and test files, New project name.">
+      <option name="closed" value="true" />
+      <created>1783344698003</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1783344698003</updated>
+    </task>
+    <task id="LOCAL-00006" summary="add readme and test files, New project name.">
+      <option name="closed" value="true" />
+      <created>1783344812588</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1783344812588</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="UnknownFeatures">
+    <option featureType="com.intellij.fileTypeFactory" implementationName="*.rules" />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
@@ -190,7 +227,7 @@
       <breakpoints>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/main.py</url>
-          <line>31</line>
+          <line>32</line>
           <option name="timeStamp" value="1" />
         </line-breakpoint>
       </breakpoints>

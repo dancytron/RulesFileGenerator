@@ -4,7 +4,7 @@ from tempfile import TemporaryDirectory
 from pathlib import Path
 import unittest
 
-from main import AUTH_ADMIN, AUTH_ADMIN_KEEP, build_rules_file, create_rules_file, get_matching_sections
+from main import AUTH_ADMIN, AUTH_ADMIN_KEEP, build_compact_rules_file, build_rules_file, create_rules_file, get_matching_sections
 
 
 class PkActionRulesTest(unittest.TestCase):
@@ -48,6 +48,33 @@ org.example.keep:
         self.assertIn('subject.isInGroup("superuser")', rules)
 
 
+    def test_build_compact_rules_file_groups_and_sorts_matching_actions(self):
+        text = """org.example.z-admin:
+  implicit active:   auth_admin
+
+org.example.b-keep:
+  implicit active:   auth_admin_keep
+
+org.example.a-admin:
+  implicit active:   auth_admin
+
+org.example.a-keep:
+  implicit active:   auth_admin_keep
+"""
+
+        sections, _ = get_matching_sections(text)
+        rules = build_compact_rules_file(sections)
+
+        self.assertLess(rules.index("//auth_admin"), rules.index("//auth_admin_keep"))
+        self.assertLess(rules.index('"org.example.a-admin"'), rules.index('"org.example.z-admin"'))
+        self.assertLess(rules.index('"org.example.a-keep"'), rules.index('"org.example.b-keep"'))
+        self.assertIn('//action.id == "org.example.z-admin" ||', rules)
+        self.assertIn('//action.id == "org.example.b-keep"', rules)
+        self.assertNotIn('//action.id == "org.example.b-keep" ||', rules)
+        self.assertNotIn("//implicit active:", rules)
+        self.assertIn('subject.isInGroup("superuser")', rules)
+
+
     def test_create_rules_file_writes_dated_file_and_returns_counts(self):
         with TemporaryDirectory() as directory:
             test_dir = Path(directory)
@@ -61,10 +88,12 @@ org.example.keep:
                 encoding="utf-8",
             )
 
-            output_path, counts = create_rules_file(test_dir, date(2026, 7, 5))
+            output_path, compact_output_path, counts = create_rules_file(test_dir, date(2026, 7, 5))
 
             self.assertEqual(output_path, test_dir / "pkaction.2026-07-05.rules")
+            self.assertEqual(compact_output_path, test_dir / "pkaction_compact2026-07-05.rules")
             self.assertTrue(output_path.exists())
+            self.assertTrue(compact_output_path.exists())
             self.assertEqual(counts, Counter({AUTH_ADMIN: 1, AUTH_ADMIN_KEEP: 1}))
 
 
