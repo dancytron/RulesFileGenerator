@@ -4,9 +4,9 @@
     <option name="autoReloadType" value="ALL" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="fcee2f3f-77f4-4e22-a679-5c1181bdb2ff" name="Changes" comment="minor grammar corrections in readme.me">
+    <list default="true" id="fcee2f3f-77f4-4e22-a679-5c1181bdb2ff" name="Changes" comment="Add comments for each function to main.py">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -44,23 +44,23 @@
   </component>
   <component name="NextEditCompletionFeaturesState">
     <decayedCancelled>
-      <entry key="MS100" value="1.0" />
-      <entry key="MS500" value="1.000000394355574" />
-      <entry key="S2" value="1.0262104912369352" />
-      <entry key="S5" value="1.7155939578265236" />
-      <entry key="S10" value="6.946293968324965" />
-      <entry key="S30" value="37.60947660430856" />
-      <entry key="S60" value="62.632729404182996" />
-      <entry key="M2" value="82.78068622179201" />
-      <entry key="M5" value="115.54163401843118" />
-      <entry key="M10" value="182.53651262974176" />
-      <entry key="M15" value="250.29933845060742" />
-      <entry key="M30" value="397.7501070539651" />
-      <entry key="H1" value="536.5655744023974" />
-      <entry key="H2" value="634.6798968011152" />
-      <entry key="H4" value="693.4582138425319" />
-      <entry key="D1" value="748.3237491015977" />
-      <entry key="W1" value="758.3169583270343" />
+      <entry key="MS100" value="1.001091106005955" />
+      <entry key="MS500" value="1.2916137298027532" />
+      <entry key="S2" value="2.952021071110544" />
+      <entry key="S5" value="4.690146850530011" />
+      <entry key="S10" value="5.832611955883583" />
+      <entry key="S30" value="8.434376798600915" />
+      <entry key="S60" value="13.492470513002624" />
+      <entry key="M2" value="28.582316421253516" />
+      <entry key="M5" value="78.98538285420913" />
+      <entry key="M10" value="156.30798891435504" />
+      <entry key="M15" value="228.85470085121977" />
+      <entry key="M30" value="392.3920849128544" />
+      <entry key="H1" value="555.5533480300898" />
+      <entry key="H2" value="675.641341715901" />
+      <entry key="H4" value="749.2619150777593" />
+      <entry key="D1" value="819.0280869467877" />
+      <entry key="W1" value="831.8392786230723" />
     </decayedCancelled>
     <decayedSelected>
       <entry key="MS100" value="0.0" />
@@ -82,23 +82,23 @@
       <entry key="W1" value="0.0" />
     </decayedSelected>
     <decayedShown>
-      <entry key="MS100" value="0.9592641193252643" />
-      <entry key="MS500" value="0.9917171218273139" />
-      <entry key="S2" value="1.0240782396828756" />
-      <entry key="S5" value="1.7139725675767656" />
-      <entry key="S10" value="6.942015736092003" />
-      <entry key="S30" value="37.600701293560704" />
-      <entry key="S60" value="62.6252409402003" />
-      <entry key="M2" value="82.77554581317081" />
-      <entry key="M5" value="115.53822475750526" />
-      <entry key="M10" value="182.53340888664843" />
-      <entry key="M15" value="250.29636397078193" />
-      <entry key="M30" value="397.7476389886514" />
-      <entry key="H1" value="536.5638739943632" />
-      <entry key="H2" value="634.6788802118589" />
-      <entry key="H4" value="693.4576554213712" />
-      <entry key="D1" value="748.3236482030443" />
-      <entry key="W1" value="758.3169437088335" />
+      <entry key="MS100" value="0.9340370137757308" />
+      <entry key="MS500" value="1.2729816786636448" />
+      <entry key="S2" value="2.940004080314929" />
+      <entry key="S5" value="4.682265717742927" />
+      <entry key="S10" value="5.827667736191207" />
+      <entry key="S30" value="8.431910338572036" />
+      <entry key="S60" value="13.49008471224429" />
+      <entry key="M2" value="28.579114853251102" />
+      <entry key="M5" value="78.98169765468934" />
+      <entry key="M10" value="156.30447686135125" />
+      <entry key="M15" value="228.85136609241962" />
+      <entry key="M30" value="392.3893165467258" />
+      <entry key="H1" value="555.5514137068509" />
+      <entry key="H2" value="675.6401708777747" />
+      <entry key="H4" value="749.2612669566571" />
+      <entry key="D1" value="819.0279689929522" />
+      <entry key="W1" value="831.839261511489" />
     </decayedShown>
   </component>
   <component name="ProjectColorInfo">{
@@ -149,7 +149,8 @@
       <workItem from="1783344492612" duration="2116000" />
       <workItem from="1783361305130" duration="94000" />
       <workItem from="1783440125523" duration="1074000" />
-      <workItem from="1783441984959" duration="1523000" />
+      <workItem from="1783441984959" duration="1662000" />
+      <workItem from="1783472686918" duration="482000" />
     </task>
     <task id="LOCAL-00001" summary="first draft">
       <option name="closed" value="true" />
@@ -231,7 +232,15 @@
       <option name="project" value="LOCAL" />
       <updated>1783442819543</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="Add comments for each function to main.py">
+      <option name="closed" value="true" />
+      <created>1783443546366</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1783443546366</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -257,18 +266,8 @@
     <MESSAGE value="Added compact format for .rules file (no comments and sorted)" />
     <MESSAGE value="Added human written instructions on how to use .rules file to readme.md." />
     <MESSAGE value="minor grammar corrections in readme.me" />
-    <option name="LAST_COMMIT_MESSAGE" value="minor grammar corrections in readme.me" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/main.py</url>
-          <line>34</line>
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
+    <MESSAGE value="Add comments for each function to main.py" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add comments for each function to main.py" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/PythonProject1$main.coverage" NAME="main Coverage Results" MODIFIED="1783298486405" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
