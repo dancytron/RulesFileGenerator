@@ -4,10 +4,7 @@
     <option name="autoReloadType" value="ALL" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="fcee2f3f-77f4-4e22-a679-5c1181bdb2ff" name="Changes" comment="Add comments for each function to main.py">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-    </list>
+    <list default="true" id="fcee2f3f-77f4-4e22-a679-5c1181bdb2ff" name="Changes" comment="changes to readme.md" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -44,23 +41,23 @@
   </component>
   <component name="NextEditCompletionFeaturesState">
     <decayedCancelled>
-      <entry key="MS100" value="1.001091106005955" />
-      <entry key="MS500" value="1.2916137298027532" />
-      <entry key="S2" value="2.952021071110544" />
-      <entry key="S5" value="4.690146850530011" />
-      <entry key="S10" value="5.832611955883583" />
-      <entry key="S30" value="8.434376798600915" />
-      <entry key="S60" value="13.492470513002624" />
-      <entry key="M2" value="28.582316421253516" />
-      <entry key="M5" value="78.98538285420913" />
-      <entry key="M10" value="156.30798891435504" />
-      <entry key="M15" value="228.85470085121977" />
-      <entry key="M30" value="392.3920849128544" />
-      <entry key="H1" value="555.5533480300898" />
-      <entry key="H2" value="675.641341715901" />
-      <entry key="H4" value="749.2619150777593" />
-      <entry key="D1" value="819.0280869467877" />
-      <entry key="W1" value="831.8392786230723" />
+      <entry key="MS100" value="1.0000012071195545" />
+      <entry key="MS500" value="1.065516404719808" />
+      <entry key="S2" value="1.5059290645182242" />
+      <entry key="S5" value="1.7800766678825077" />
+      <entry key="S10" value="2.267589075993185" />
+      <entry key="S30" value="5.104877689786721" />
+      <entry key="S60" value="7.553580497791549" />
+      <entry key="M2" value="11.8180332821871" />
+      <entry key="M5" value="38.78753663828329" />
+      <entry key="M10" value="103.69244758167387" />
+      <entry key="M15" value="172.52754827444434" />
+      <entry key="M30" value="341.54947955761185" />
+      <entry key="H1" value="523.238367487971" />
+      <entry key="H2" value="663.1267415839728" />
+      <entry key="H4" value="751.031684892059" />
+      <entry key="D1" value="835.6755864510308" />
+      <entry key="W1" value="851.352073730268" />
     </decayedCancelled>
     <decayedSelected>
       <entry key="MS100" value="0.0" />
@@ -82,23 +79,23 @@
       <entry key="W1" value="0.0" />
     </decayedSelected>
     <decayedShown>
-      <entry key="MS100" value="0.9340370137757308" />
-      <entry key="MS500" value="1.2729816786636448" />
-      <entry key="S2" value="2.940004080314929" />
-      <entry key="S5" value="4.682265717742927" />
-      <entry key="S10" value="5.827667736191207" />
-      <entry key="S30" value="8.431910338572036" />
-      <entry key="S60" value="13.49008471224429" />
-      <entry key="M2" value="28.579114853251102" />
-      <entry key="M5" value="78.98169765468934" />
-      <entry key="M10" value="156.30447686135125" />
-      <entry key="M15" value="228.85136609241962" />
-      <entry key="M30" value="392.3893165467258" />
-      <entry key="H1" value="555.5514137068509" />
-      <entry key="H2" value="675.6401708777747" />
-      <entry key="H4" value="749.2612669566571" />
-      <entry key="D1" value="819.0279689929522" />
-      <entry key="W1" value="831.839261511489" />
+      <entry key="MS100" value="0.8293206337314986" />
+      <entry key="MS500" value="1.0274299906276478" />
+      <entry key="S2" value="1.4939919165748454" />
+      <entry key="S5" value="1.774703787472732" />
+      <entry key="S10" value="2.2642377097038495" />
+      <entry key="S30" value="5.102285707954726" />
+      <entry key="S60" value="7.549557332782853" />
+      <entry key="M2" value="11.810070385425046" />
+      <entry key="M5" value="38.777948070240306" />
+      <entry key="M10" value="103.68449384035812" />
+      <entry key="M15" value="172.5207883949558" />
+      <entry key="M30" value="341.54466465171987" />
+      <entry key="H1" value="523.2352656989523" />
+      <entry key="H2" value="663.1249322263375" />
+      <entry key="H4" value="751.0306999711528" />
+      <entry key="D1" value="835.675409494465" />
+      <entry key="W1" value="851.3520481129011" />
     </decayedShown>
   </component>
   <component name="ProjectColorInfo">{
@@ -151,6 +148,7 @@
       <workItem from="1783440125523" duration="1074000" />
       <workItem from="1783441984959" duration="1662000" />
       <workItem from="1783472686918" duration="482000" />
+      <workItem from="1783473198169" duration="981000" />
     </task>
     <task id="LOCAL-00001" summary="first draft">
       <option name="closed" value="true" />
@@ -240,7 +238,23 @@
       <option name="project" value="LOCAL" />
       <updated>1783443546366</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="changes to readme.md">
+      <option name="closed" value="true" />
+      <created>1783473478952</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1783473478952</updated>
+    </task>
+    <task id="LOCAL-00013" summary="changes to readme.md">
+      <option name="closed" value="true" />
+      <created>1783473771263</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1783473771263</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -267,7 +281,8 @@
     <MESSAGE value="Added human written instructions on how to use .rules file to readme.md." />
     <MESSAGE value="minor grammar corrections in readme.me" />
     <MESSAGE value="Add comments for each function to main.py" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add comments for each function to main.py" />
+    <MESSAGE value="changes to readme.md" />
+    <option name="LAST_COMMIT_MESSAGE" value="changes to readme.md" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/PythonProject1$main.coverage" NAME="main Coverage Results" MODIFIED="1783298486405" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
